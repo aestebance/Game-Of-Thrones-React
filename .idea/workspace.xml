@@ -2,7 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff4f5cce-b6a9-4e57-a12e-b4bb1fba7061" name="Default Changelist" comment="initial commit">
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/components/Header/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/components/Header/Header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/components/Menu/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shareds/components/Menu/Menu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/components/Menu/Menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/shareds/components/Menu/Menu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/components/Routes/Routes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/components/Routes/Routes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Characters/Characters.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/CharactersPage/CharactersPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Chronology/Chronology.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ChronologyPage/ChronologyPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Houses/Houses.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/HousesPage/HousesPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/HomePage/HomePage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Main/Main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/HomePage/HomePage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/blocks/b-container.blocks.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/blocks/_b-container.blocks.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/imports/_utilities.imports.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/imports/_utilities.imports.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +39,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../nodeJS/Trabajo Final" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../react-amiibo" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -31,6 +48,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/shareds/components" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -41,6 +63,8 @@
       <option name="presentableId" value="Default" />
       <updated>1607250398965</updated>
       <workItem from="1607250400165" duration="2692000" />
+      <workItem from="1607333602227" duration="823000" />
+      <workItem from="1607336670890" duration="9806000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1607251925985</created>
@@ -72,6 +96,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />

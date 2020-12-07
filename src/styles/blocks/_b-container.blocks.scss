@@ -4,4 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  &--no-padding {
+    padding: 0px;
+  }
 }

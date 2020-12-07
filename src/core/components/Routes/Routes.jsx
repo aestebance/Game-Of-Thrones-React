@@ -1,24 +1,29 @@
 import React from 'react';
 import {Route, Switch } from 'react-router-dom';
-import Main from '../../../pages/Main/Main';
-import Characters from '../../../pages/Characters/Characters';
-import Houses from '../../../pages/Houses/Houses';
-import Chronology from '../../../pages/Chronology/Chronology';
+import HomePage from '../../../pages/HomePage/HomePage';
+import CharactersPage from '../../../pages/CharactersPage/CharactersPage';
+import HousesPage from '../../../pages/HousesPage/HousesPage';
+import ChronologyPage from '../../../pages/ChronologyPage/ChronologyPage';
+import {Menu} from "../../../shareds/components/Menu/Menu";
 
 export default function Routes() {
     return (
         <Switch>
             <Route path="/characters">
-                <Characters></Characters>
+                <CharactersPage></CharactersPage>
+                <Menu></Menu>
             </Route>
             <Route path="/houses">
-                <Houses></Houses>
+                <HousesPage></HousesPage>
+                <Menu></Menu>
             </Route>
             <Route path="/chronology">
-                <Chronology></Chronology>
+                <ChronologyPage></ChronologyPage>
+                <Menu></Menu>
             </Route>
             <Route path="/">
-                <Main></Main>
+                <HomePage></HomePage>
+                <Menu></Menu>
             </Route>
         </Switch>
     )

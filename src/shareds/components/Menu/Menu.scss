@@ -1,5 +1,7 @@
 .c-menu {
   height: 10.8%;
+  padding-left: 8%;
+  padding-right: 8%;
   &__nav {
     width: 100%;
     display: flex;
@@ -7,7 +9,7 @@
     justify-content: space-between;
   }
   &__link {
-    font-size: 36px;
+    font-size: calc(5px + 1.8vw);
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
