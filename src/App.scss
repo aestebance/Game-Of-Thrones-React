@@ -1,9 +1,15 @@
 .c-main {
-  border: 1px solid;
   width: 100vw;
   height: 100vh;
+  padding-left: 8%;
+  padding-right: 8%;
+  &--backgroundImage {
+    background-image: url('/assets/images/background.svg');
+  }
+  &--backgroundblack {
+    background-image: none;
+  }
   &__container {
-
     height: 80.9%;
   }
 }

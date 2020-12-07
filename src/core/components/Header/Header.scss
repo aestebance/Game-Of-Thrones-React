@@ -1,4 +1,26 @@
 .c-header {
-  border: 1px solid red;
   height: 8.3%;
+  display: flex;
+}
+
+.c-search-bar {
+  height: 100%;
+  width: 50%;
+}
+
+.c-top-links {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  &__flag {
+    height: 64px;
+    margin-left: 29px;
+    &--group {
+      display: none;
+      width: 52px;
+      height: 49.4px;
+    }
+  }
 }

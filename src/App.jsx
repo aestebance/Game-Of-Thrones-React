@@ -7,7 +7,7 @@ import Routes from './core/components/Routes/Routes';
 
 function App() {
   return (
-      <div className="c-main">
+      <div className="c-main c-main--backgroundImage">
           <Router>
               <Header></Header>
               <div className="c-main__container">
