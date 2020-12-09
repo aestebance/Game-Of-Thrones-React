@@ -1,0 +1,9 @@
+.c-searchBar {
+  border-bottom: 2px solid #FFFFFF;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  &__image {
+    height: 32px;
+  }
+}
