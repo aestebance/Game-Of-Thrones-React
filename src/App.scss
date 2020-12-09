@@ -1,13 +1,4 @@
 .c-main {
   width: 100vw;
   height: 100vh;
-  &--backgroundImage {
-    background-image: url('/assets/images/background.svg');
-  }
-  &--backgroundblack {
-    background-image: none;
-  }
-  &__container {
-    height: 80.9%;
-  }
 }

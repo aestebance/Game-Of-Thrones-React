@@ -15,7 +15,6 @@ export default function Routes() {
             </Route>
             <Route path="/characters">
                 <CharactersPage/>
-                <Menu/>
             </Route>
             <Route path="/houses">
                 <HousesPage/>
@@ -27,7 +26,6 @@ export default function Routes() {
             </Route>
             <Route path="/">
                 <HomePage/>
-                <Menu/>
             </Route>
         </Switch>
     )

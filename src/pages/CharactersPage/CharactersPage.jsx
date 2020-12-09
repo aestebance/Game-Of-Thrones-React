@@ -1,6 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
+import './CharactersPage.scss';
 import CharactersGallery from "./components/CharactersGallery/CharactersGallery";
+import {Menu} from "../../shareds/components/Menu/Menu";
+import {Header} from "../../core/components/Header/Header";
 
 export default function CharactersPage() {
     const [characters, setCharacters] = useState([]);
@@ -12,9 +15,13 @@ export default function CharactersPage() {
     }, []);
 
     return (
-            <div className="b-container">
+        <div className="b-container">
+            <Header></Header>
+            <div className="c-main-char">
                 <CharactersGallery characters={characters}></CharactersGallery>
             </div>
+            <Menu></Menu>
+        </div>
 
     )
 }

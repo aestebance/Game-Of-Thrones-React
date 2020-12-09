@@ -1,7 +1,10 @@
 .c-menu {
-  height: 10.8%;
-  padding-left: 8%;
-  padding-right: 8%;
+  position: absolute;
+  top: 91.7vh;
+  height: 8.3vh;
+  width: 100%;
+  padding-left: 8vw;
+  padding-right: 8vw;
   &__nav {
     width: 100%;
     display: flex;
