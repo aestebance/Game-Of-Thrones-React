@@ -15,5 +15,8 @@
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
+    &--active {
+      text-decoration: underline;
+    }
   }
 }

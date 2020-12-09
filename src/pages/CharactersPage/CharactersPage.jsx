@@ -8,7 +8,6 @@ export default function CharactersPage() {
     useEffect(() => {
         axios.get('https://api.got.show/api/show/characters').then(res => {
             setCharacters(res.data);
-            console.log(res.data);
         });
     }, []);
 

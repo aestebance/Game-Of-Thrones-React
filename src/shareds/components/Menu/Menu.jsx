@@ -6,9 +6,9 @@ export function Menu() {
     return(
         <div className="c-menu">
             <nav className="c-menu__nav">
-                <NavLink className="c-menu__link" to="/characters"><div className="u-font-color-white">PERSONAJES</div></NavLink>
-                <NavLink className="c-menu__link" to="/houses"><div className="u-font-color-white">CASAS</div></NavLink>
-                <NavLink className="c-menu__link" to="/chronology"><div className="u-font-color-white">CRONOLOGIA</div></NavLink>
+                <NavLink className="c-menu__link u-font-color-white" activeClassName="c-menu__link--active" to="/characters">PERSONAJES</NavLink>
+                <NavLink className="c-menu__link u-font-color-white" activeClassName="c-menu__link--active" to="/houses">CASAS</NavLink>
+                <NavLink className="c-menu__link u-font-color-white" activeClassName="c-menu__link--active" to="/chronology">CRONOLOGIA</NavLink>
             </nav>
         </div>
     );

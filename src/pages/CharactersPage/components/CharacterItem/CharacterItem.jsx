@@ -1,11 +1,18 @@
 import React from 'react';
 import './CharacterItem.scss';
+import { NavLink } from 'react-router-dom';
 
 export default function CharacterItem(props) {
 
     return (
-        <div className="div">
-            {/*<img className="c-characters__img img-fluid" src={props.character.image} alt={props.character.name}/>*/}
-        </div>
+        <NavLink to={'/characters/detail/' + props.character.name}>
+            <div className="c-card">
+                <img className="c-card__img" src={props.character.image} alt={props.character.name}/>
+                <div className="c-card__hover">
+                    <figcaption className="c-card__text u-font-color-white">{props.character.name}</figcaption>
+                </div>
+            </div>
+        </NavLink>
+
     )
 }
