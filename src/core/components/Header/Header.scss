@@ -3,6 +3,7 @@
   width: 100%;
   height: 8.3vh;
   display: flex;
+  flex-wrap: wrap;
   padding-left: 8vw;
   padding-right: 8vw;
 }
@@ -12,11 +13,47 @@
   align-items: flex-end;
   height: 100%;
   width: 50%;
+  min-width: 250px;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+  }
+
+  &__vector {
+    width: 42px;
+    height: 29px;
+  }
+  &__text {
+    width: 68px;
+    height: 29px;
+    margin: 0 0 0 16px;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+  }
 }
 
 .c-top-links {
   height: 100%;
   width: 50%;
+  min-width: 250px;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;

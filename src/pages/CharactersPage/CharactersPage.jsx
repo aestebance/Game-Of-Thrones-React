@@ -9,11 +9,13 @@ let allCharacters = [];
 
 export default function CharactersPage() {
     const [characters, setCharacters] = useState([]);
+    const [loader, setLoader] = useState(true);
 
     useEffect(() => {
         axios.get('https://api.got.show/api/show/characters').then(res => {
             allCharacters = res.data;
             setCharacters(allCharacters);
+            setLoader(false);
         });
     }, []);
 
@@ -24,6 +26,9 @@ export default function CharactersPage() {
 
     return (
         <div className="b-container">
+            {loader && <div className="b-loader">
+                <div className="lds-hourglass"></div>
+            </div>}
             <Header fnSearch={fnSearch} showSearch={true}></Header>
             <div className="c-main-char">
                 <CharactersGallery characters={characters}></CharactersGallery>

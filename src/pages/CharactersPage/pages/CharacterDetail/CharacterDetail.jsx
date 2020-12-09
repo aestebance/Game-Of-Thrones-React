@@ -7,7 +7,7 @@ export default function CharacterDetail() {
     const name = useParams().name;
     return (
         <div className="b-container">
-            <Header></Header>
+            <Header showBack="characters"></Header>
             <div className="c-main-charDetail">
                 <div className="detail"></div>
             </div>
