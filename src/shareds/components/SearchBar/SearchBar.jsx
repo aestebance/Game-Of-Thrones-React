@@ -13,7 +13,7 @@ export function SearchBar(props) {
     return (
         <div className="c-searchBar">
             <img className="c-searchBar__image" src="/assets/images/search.svg" alt="search"></img>
-            <form onChange={handleSubmit(onChange)}>
+            <form className="c-searchBar__form" onChange={handleSubmit(onChange)}>
                 <input className="b-input" placeholder="Buscar..." type="text" name="search" ref={register}/>
             </form>
         </div>

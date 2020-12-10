@@ -6,6 +6,7 @@ import HousesPage from '../../../pages/HousesPage/HousesPage';
 import ChronologyPage from '../../../pages/ChronologyPage/ChronologyPage';
 import CharacterDetail from "../../../pages/CharactersPage/pages/CharacterDetail/CharacterDetail";
 import {Menu} from "../../../shareds/components/Menu/Menu";
+import HouseDetail from "../../../pages/HousesPage/pages/HouseDetail/HouseDetail";
 
 export default function Routes() {
     return (
@@ -15,6 +16,9 @@ export default function Routes() {
             </Route>
             <Route path="/characters">
                 <CharactersPage/>
+            </Route>
+            <Route path="/houses/detail/:name">
+                <HouseDetail/>
             </Route>
             <Route path="/houses">
                 <HousesPage/>

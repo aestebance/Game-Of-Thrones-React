@@ -6,7 +6,7 @@ import {Menu} from "../../shareds/components/Menu/Menu";
 export default function HomePage() {
     return (
             <div className="b-container b-container--background">
-                <Header></Header>
+                <Header hideHome="true"></Header>
                 <div className="c-main-home">
                     <p className="c-title">GAME OF THRONES</p>
                 </div>

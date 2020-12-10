@@ -21,8 +21,8 @@ export function Header(props) {
                 {props.showSearch && <SearchBar fnChange={filterCharacters}></SearchBar>}
             </div>
             <div className="c-top-links">
-                <NavLink to="/"><img className="c-top-links__flag--group" src="/assets/images/group.png"
-                                     alt=""/></NavLink>
+                {!props.hideHome && <NavLink to="/"><img className="c-top-links__flag--group" src="/assets/images/group.png"
+                                     alt=""/></NavLink>}
                 <img className="c-top-links__flag" src="/assets/images/spain.png" alt=""/>
                 <img className="c-top-links__flag" src="/assets/images/uk.png" alt=""/>
             </div>
