@@ -13,7 +13,13 @@ export default function HousesPage() {
 
     useEffect(() => {
         axios.get('https://api.got.show/api/show/houses').then(res => {
-            allHouses = res.data;
+            res.data.map((house) => {
+                if (house.logoURL) {
+                    allHouses.unshift(house);
+                } else {
+                    allHouses.push(house);
+                }
+            });
             setHouses(allHouses);
             setLoader(false);
         });

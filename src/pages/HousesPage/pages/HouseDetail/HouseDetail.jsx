@@ -29,7 +29,8 @@ export default function HouseDetail() {
             <div className="c-main-HouseDetail">
                 <div className="detail">
                     <div className="c-main-top">
-                        <img className="c-main-top__image" src={house.logoURL} alt=""/>
+                        {house.logoURL && <img className="c-main-top__image" src={house.logoURL} alt={house.name}/>}
+                        {!house.logoURL && <img className="c-main-top__image" src="/assets/images/no-image.png" alt={house.name}/>}
                     </div>
                     <div className="c-main-middle">
                         <span className="c-main-middle__text">
