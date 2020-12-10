@@ -20,6 +20,7 @@ export function Header(props) {
                 {!props.hideHome && <NavLink to="/"><img className="c-top-links__flag--group" src="/assets/images/group.png"
                                      alt=""/></NavLink>}
                 <img className="c-top-links__flag" src="/assets/images/spain.png" alt=""/>
+                <img className="c-top-links__flag" src="/assets/images/romania.png" alt=""/>
                 <img className="c-top-links__flag" src="/assets/images/uk.png" alt=""/>
             </div>
 
