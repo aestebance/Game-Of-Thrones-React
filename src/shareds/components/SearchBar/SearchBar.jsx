@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {useForm} from "react-hook-form";
 import './SearchBar.scss';
+import SearchContext from "../../contexts/SearchContext";
 
 export function SearchBar(props) {
 
     const {register, handleSubmit} = useForm();
+    const {setSearch} = useContext(SearchContext);
 
     const  onChange = (data) => {
-        props.fnChange(data);
+        setSearch(data);
     }
 
     return (

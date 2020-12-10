@@ -1,30 +1,29 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState, useContext} from 'react';
 import axios from 'axios';
 import {useParams} from 'react-router-dom'
 import SimpleBar from 'simplebar-react';
 import './HouseDetail.scss';
 import {Header} from "../../../../core/components/Header/Header";
+import LoadingContext from "../../../../shareds/contexts/LoadingContext";
 
 export default function HouseDetail() {
 
     const [house, setHouse] = useState({});
-    const [loader, setLoader] = useState(true);
+    const { setIsLoading } = useContext(LoadingContext);
 
     const name = useParams().name;
 
     useEffect(() => {
+        setIsLoading(true);
         axios.get('https://api.got.show/api/show/houses/' + name).then(res => {
             setHouse(res.data[0]);
-            setLoader(false);
+            setIsLoading(false);
         });
 
-    }, [name]);
+    }, [name, setIsLoading]);
 
     return (
         <div className="b-container">
-            {loader && <div className="b-loader">
-                <div className="lds-hourglass"></div>
-            </div>}
             <Header showBack="houses"></Header>
             <div className="c-main-HouseDetail">
                 <div className="detail">

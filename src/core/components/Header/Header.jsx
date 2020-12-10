@@ -5,10 +5,6 @@ import {SearchBar} from "../../../shareds/components/SearchBar/SearchBar";
 
 export function Header(props) {
 
-    const filterCharacters = (filterData) => {
-        props.fnSearch(filterData);
-    }
-
     return (
         <div className="c-header">
             <div className="c-left-bar">
@@ -18,7 +14,7 @@ export function Header(props) {
                         <span className="c-left-bar__text">Volver</span>
                     </div>
                 </NavLink>}
-                {props.showSearch && <SearchBar fnChange={filterCharacters}></SearchBar>}
+                {props.showSearch && <SearchBar/>}
             </div>
             <div className="c-top-links">
                 {!props.hideHome && <NavLink to="/"><img className="c-top-links__flag--group" src="/assets/images/group.png"
