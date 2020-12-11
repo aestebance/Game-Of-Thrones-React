@@ -5,17 +5,22 @@ import SimpleBar from 'simplebar-react';
 import './HouseDetail.scss';
 import {Header} from "../../../../core/components/Header/Header";
 import LoadingContext from "../../../../shareds/contexts/LoadingContext";
+import {useTranslation} from "react-i18next";
+
+let date = null;
 
 export default function HouseDetail() {
 
     const [house, setHouse] = useState({});
     const { setIsLoading } = useContext(LoadingContext);
+    const { t } = useTranslation();
 
     const name = useParams().name;
 
     useEffect(() => {
         setIsLoading(true);
         axios.get('https://api.got.show/api/show/houses/' + name).then(res => {
+            date = new Date(res.data[0].createdAt);
             setHouse(res.data[0]);
             setIsLoading(false);
         });
@@ -39,7 +44,7 @@ export default function HouseDetail() {
                     <div className="c-main-bottom">
                         <div className="c-main-bottom__box">
                             <div className="c-main-bottom__title">
-                                <span>LEMA</span>
+                                <span>{t("Lema")}</span>
                             </div>
                             <div className="c-main-bottom__content">
                                 <div className="c-main-bottom__list--margin">
@@ -51,7 +56,7 @@ export default function HouseDetail() {
                         </div>
                         <div className="c-main-bottom__box">
                             <div className="c-main-bottom__title">
-                                <span>SEDE</span>
+                                <span>{t("Sede")}</span>
                             </div>
 
                             <div className="c-main-bottom__content">
@@ -68,7 +73,7 @@ export default function HouseDetail() {
                         </div>
                         <div className="c-main-bottom__box">
                             <div className="c-main-bottom__title">
-                                <span>REGION</span>
+                                <span>{t("Region")}</span>
                             </div>
 
                             <div className="c-main-bottom__content">
@@ -86,7 +91,7 @@ export default function HouseDetail() {
                         </div>
                         <div className="c-main-bottom__box">
                             <div className="c-main-bottom__title">
-                                <span>ALIANZAS</span>
+                                <span>{t("Alianzas")}</span>
                             </div>
                             <div className="c-main-bottom__content">
                                 <div className="c-main-bottom__list">
@@ -102,7 +107,7 @@ export default function HouseDetail() {
                         </div>
                         <div className="c-main-bottom__box">
                             <div className="c-main-bottom__title">
-                                <span>RELIGIONES</span>
+                                <span>{t("Religiones")}</span>
                             </div>
                             <div className="c-main-bottom__content">
                                 <div className="c-main-bottom__list">
@@ -118,17 +123,13 @@ export default function HouseDetail() {
                         </div>
                         <div className="c-main-bottom__box">
                             <div className="c-main-bottom__title">
-                                <span>FUNDACION</span>
+                                <span>{t("Fundacion")}</span>
                             </div>
                             <div className="c-main-bottom__content">
-                                <div className="c-main-bottom__list">
-                                    {/*<SimpleBar style={{height: "100%"}}>*/}
-                                    {/*    {character.titles && character.titles.map((char, index) =>*/}
-                                    {/*        <div className="c-main-bottom__list--margin" key={index}>*/}
-                                    {/*            <span className="c-main-bottom__text">{char}</span>*/}
-                                    {/*        </div>*/}
-                                    {/*    )}*/}
-                                    {/*</SimpleBar>*/}
+                                <div className="c-main-bottom__list--margin">
+                                    <span
+                                        className="c-main-bottom__text">{date && date.getDate() + '/' + date.getMonth() + '/' + date.getFullYear()}
+                                    </span>
                                 </div>
                             </div>
                         </div>

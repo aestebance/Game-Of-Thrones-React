@@ -5,11 +5,13 @@ import SimpleBar from 'simplebar-react';
 import './CharacterDetail.scss';
 import {Header} from "../../../../core/components/Header/Header";
 import LoadingContext from "../../../../shareds/contexts/LoadingContext";
+import { useTranslation } from 'react-i18next';
 
 export default function CharacterDetail() {
     const [character, setCharacter] = useState({});
     const [houseImg, setHouseImg] = useState('');
     const {setIsLoading} = useContext(LoadingContext);
+    const { t } = useTranslation();
 
     const name = useParams().name;
 
@@ -42,7 +44,7 @@ export default function CharacterDetail() {
                     <div className="c-main-bottom">
                         <div className="c-main-bottom__box">
                             <div className="c-main-bottom__title">
-                                <span>CASA</span>
+                                <span>{t("Casa")}</span>
                             </div>
                             <div className="c-main-bottom__content">
                                 <img className="c-main-bottom__img" src={houseImg} alt=""/>
@@ -50,7 +52,7 @@ export default function CharacterDetail() {
                         </div>
                         <div className="c-main-bottom__box">
                             <div className="c-main-bottom__title">
-                                <span>ALIANZAS</span>
+                                <span>{t("Alianzas")}</span>
                             </div>
 
                             <div className="c-main-bottom__content">
@@ -67,7 +69,7 @@ export default function CharacterDetail() {
                         </div>
                         <div className="c-main-bottom__box">
                             <div className="c-main-bottom__title">
-                                <span>APARICIONES</span>
+                                <span>{t("Apariciones")}</span>
                             </div>
 
                             <div className="c-main-bottom__content">
@@ -87,7 +89,7 @@ export default function CharacterDetail() {
                         </div>
                         <div className="c-main-bottom__box">
                             <div className="c-main-bottom__title">
-                                <span>PADRE</span>
+                                <span>{t("Padre")}</span>
                             </div>
                             <div className="c-main-bottom__content">
                                 <div className="c-main-bottom__list">
@@ -100,7 +102,7 @@ export default function CharacterDetail() {
                         </div>
                         <div className="c-main-bottom__box">
                             <div className="c-main-bottom__title">
-                                <span>HERMANOS</span>
+                                <span>{t("Hermanos")}</span>
                             </div>
                             <div className="c-main-bottom__content">
                                 <div className="c-main-bottom__list">
@@ -116,7 +118,7 @@ export default function CharacterDetail() {
                         </div>
                         <div className="c-main-bottom__box">
                             <div className="c-main-bottom__title">
-                                <span>TITULOS</span>
+                                <span>{t("Titulos")}</span>
                             </div>
                             <div className="c-main-bottom__content">
                                 <div className="c-main-bottom__list">
