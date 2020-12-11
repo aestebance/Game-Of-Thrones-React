@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import {useForm} from "react-hook-form";
 import './SearchBar.scss';
-import SearchContext from "../../contexts/SearchContext";
+import SearchContext from "../../../../../shareds/contexts/SearchContext";
 import { useTranslation } from 'react-i18next';
 
 export function SearchBar(props) {

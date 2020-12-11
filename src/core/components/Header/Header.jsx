@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {NavLink} from 'react-router-dom';
 import './Header.scss';
-import {SearchBar} from "../../../shareds/components/SearchBar/SearchBar";
+import {SearchBar} from "./components/SearchBar/SearchBar";
 import { useTranslation } from 'react-i18next';
 
 export function Header(props) {
