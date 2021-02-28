@@ -1,4 +1,4 @@
-## Project in React Hooks that shows characters and houses of Game of Thrones (Serie).
+## Project in React Hooks that shows characters and houses of Game of Thrones (Serie)
 
 Techologies:
 
