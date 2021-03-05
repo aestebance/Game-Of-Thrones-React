@@ -19,7 +19,8 @@ export default function CharacterDetail() {
         setIsLoading(true);
         axios.get('https://api.got.show/api/show/characters/' + name).then(res => {
             setCharacter(res.data);
-            axios.get('https://api.got.show/api/show/houses/' + res.data.house).then(dat => {
+            const house = res.data.house.replace(/&apos;/g, '\'');
+            axios.get('https://api.got.show/api/show/houses/' + house).then(dat => {
                 setHouseImg(dat.data[0].logoURL);
                 setIsLoading(false);
             });
